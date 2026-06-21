@@ -11,7 +11,6 @@ def clean_numeric_column(df, col):
         .astype(str)
         .str.replace("€", "", regex=False)
         .str.replace("$", "", regex=False)
-        .str.replace("£", "", regex=False)
         .str.replace(" ", "", regex=False)
         .str.replace(",", "", regex=False)
         .str.strip()
